@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -102,19 +104,34 @@
         string[] choices = { "Rock", "Paper", "Scissors"};
         Console.WriteLine("Choose one: ");
         string playerPick = Console.ReadLine();
+
         if (choices.Any(x => x.Equals(playerPick)))
         {
             string botPick = choices[random.Next(choices.Length)];
-            
+            string[,] options = { {"Rock","Paper"},{"Scissors", "Rock" },{"Paper","Scissors"}};
+            Console.WriteLine($"{playerPick} X {botPick}!");
+            if (playerPick.Equals(botPick)) {
+                Console.WriteLine("We're even brother!");
+            } else
+            {
+                for(int i = 0;i < options.Length; i++)
+                {
+                    Console.WriteLine(options);
+                }
+
+                foreach(var option in options)
+                {
+                    if(option.Any(e => e.Equals(playerPick)) && option.Any(e => e.Equals(botPick)))
+                    {
+                       string winner = option[1].Equals(playerPick) ? "Player" : "Bot";
+                       Console.WriteLine($"The {winner} is the Winner!");
+                    }
+                }
+            }
         } else
         {
             Console.WriteLine($"{playerPick} isn't a valid option!");
         }
-
-
-
-
-
 
         Console.ReadKey();
     }
