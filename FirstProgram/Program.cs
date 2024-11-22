@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 internal class Program
 {
@@ -100,39 +101,71 @@ internal class Program
 
         // Building a Rock, Paper, Scissors game
 
-        Random random = new Random();
-        string[] choices = { "Rock", "Paper", "Scissors"};
-        Console.WriteLine("Choose one: ");
-        string playerPick = Console.ReadLine();
+        //    Random random = new Random();
+        //    string[] choices = { "Rock", "Paper", "Scissors"};
+        //    Console.WriteLine("Choose one: ");
+        //    string playerPick = Console.ReadLine();
 
-        if (choices.Any(x => x.Equals(playerPick)))
-        {
-            string botPick = choices[random.Next(choices.Length)];
-            string[,] options = { {"Rock","Paper"},{"Scissors", "Rock" },{"Paper","Scissors"}};
-            Console.WriteLine($"{playerPick} X {botPick}!");
-            if (playerPick.Equals(botPick)) {
-                Console.WriteLine("We're even brother!");
-            } else
-            {
-                for(int i = 0;i < options.Length; i++)
-                {
-                    Console.WriteLine(options);
-                }
+        //    if (choices.Any(x => x.Equals(playerPick)))
+        //    {
+        //        string botPick = choices[random.Next(choices.Length)];
+        //        string[,] options = { {"Rock","Paper"},{"Scissors", "Rock" },{"Paper","Scissors"}};
+        //        Console.WriteLine($"{playerPick} X {botPick}!");
+        //        if (playerPick.Equals(botPick)) {
+        //            Console.WriteLine("We're even brother!");
+        //        } else
+        //        {
+        //            for(int i = 0;i < options.Length; i++)
+        //            {
+        //                Console.WriteLine(options);
+        //            }
 
-                foreach(var option in options)
-                {
-                    if(option.Any(e => e.Equals(playerPick)) && option.Any(e => e.Equals(botPick)))
-                    {
-                       string winner = option[1].Equals(playerPick) ? "Player" : "Bot";
-                       Console.WriteLine($"The {winner} is the Winner!");
-                    }
-                }
-            }
-        } else
+        //            foreach(var option in options)
+        //            {
+        //                if(option.Any(e => e.Equals(playerPick)) && option.Any(e => e.Equals(botPick)))
+        //                {
+        //                   string winner = option[1].Equals(playerPick) ? "Player" : "Bot";
+        //                   Console.WriteLine($"The {winner} is the Winner!");
+        //                }
+        //            }
+        //        }
+        //    } else
+        //    {
+        //        Console.WriteLine($"{playerPick} isn't a valid option!");
+        //    }
+
+        //    Console.ReadKey();
+
+        // Building a Simple Calculator
+        Console.Write("Type the first number: ");
+        int firstnum = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Type the second number: ");
+        int secondnum = Convert.ToInt32(Console.ReadLine());
+
+        string ops = "";
+
+        while(ops != "sum" && ops!= "sub" && ops != "div" && ops != "times")
         {
-            Console.WriteLine($"{playerPick} isn't a valid option!");
+            Console.Write("Which Operation would you like to perform (sum,sub,div,times): ");
+            ops = Console.ReadLine().ToLower();
         }
 
-        Console.ReadKey();
+        switch (ops)
+        {
+            case "sum":
+                Console.WriteLine($"{firstnum} + {secondnum} is equal to {firstnum + secondnum}");
+                break;
+            case "sub":
+                Console.WriteLine($"{firstnum} - {secondnum} is equal to {firstnum - secondnum}");
+                break;
+            case "div":
+                Console.WriteLine($"{firstnum} / {secondnum} is equal to {firstnum / secondnum}");
+                break;
+            case "times":
+                Console.WriteLine($"{firstnum} X {secondnum} is equal to {firstnum * secondnum}");
+                break;
+        }
+
     }
 }
