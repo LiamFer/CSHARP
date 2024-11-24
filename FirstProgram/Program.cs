@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstProgram;
+using System;
 using System.Numerics;
 
 internal class Program
@@ -137,35 +138,65 @@ internal class Program
         //    Console.ReadKey();
 
         // Building a Simple Calculator
-        Console.Write("Type the first number: ");
-        int firstnum = Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Type the first number: ");
+        //int firstnum = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Type the second number: ");
-        int secondnum = Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Type the second number: ");
+        //int secondnum = Convert.ToInt32(Console.ReadLine());
 
-        string ops = "";
+        //string ops = "";
 
-        while(ops != "sum" && ops!= "sub" && ops != "div" && ops != "times")
+        //while(ops != "sum" && ops!= "sub" && ops != "div" && ops != "times")
+        //{
+        //    Console.Write("Which Operation would you like to perform (sum,sub,div,times): ");
+        //    ops = Console.ReadLine().ToLower();
+        //}
+
+        //switch (ops)
+        //{
+        //    case "sum":
+        //        Console.WriteLine($"{firstnum} + {secondnum} is equal to {firstnum + secondnum}");
+        //        break;
+        //    case "sub":
+        //        Console.WriteLine($"{firstnum} - {secondnum} is equal to {firstnum - secondnum}");
+        //        break;
+        //    case "div":
+        //        Console.WriteLine($"{firstnum} / {secondnum} is equal to {firstnum / secondnum}");
+        //        break;
+        //    case "times":
+        //        Console.WriteLine($"{firstnum} X {secondnum} is equal to {firstnum * secondnum}");
+        //        break;
+        //}
+
+        // Implementing classes
+
+        //Vehicle[] vehicles = new Vehicle[3];
+
+        //vehicles[0] = new Car ("Chevy", 1998);
+        //vehicles[1] = new Boat("John Deere", 2015);
+        //vehicles[2] = new Motorcycle("Harley Davidson", 2022);
+
+        //Car car = new Car("Chevy", 1998);
+        //Boat boat = new Boat("John Deere", 2015);
+        //Motorcycle bike = new Motorcycle("Harley Davidson",2022);
+
+        // Lists use more memory 
+        List<Vehicle> list = new();
+
+        list.Add(new Car("Chevy", 1998));
+        list.Add(new Boat("John Deere", 2015));
+        list.Add(new Motorcycle("Harley Davidson", 2022));
+
+        printItems(list);
+
+    }
+
+    // Generic methods
+    public static void printItems<Type>(List<Type> myList)
+    {
+        foreach(Type item in myList)
         {
-            Console.Write("Which Operation would you like to perform (sum,sub,div,times): ");
-            ops = Console.ReadLine().ToLower();
+            Console.WriteLine(item.ToString());
         }
-
-        switch (ops)
-        {
-            case "sum":
-                Console.WriteLine($"{firstnum} + {secondnum} is equal to {firstnum + secondnum}");
-                break;
-            case "sub":
-                Console.WriteLine($"{firstnum} - {secondnum} is equal to {firstnum - secondnum}");
-                break;
-            case "div":
-                Console.WriteLine($"{firstnum} / {secondnum} is equal to {firstnum / secondnum}");
-                break;
-            case "times":
-                Console.WriteLine($"{firstnum} X {secondnum} is equal to {firstnum * secondnum}");
-                break;
-        }
-
     }
 }

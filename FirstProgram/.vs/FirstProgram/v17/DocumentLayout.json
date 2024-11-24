@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5DC7D700-F672-411C-A61F-9CCA6BB14391}|FirstProgram.csproj|c:\\users\\windows\\desktop\\stuff\\coding\\csharp\\firstprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DC7D700-F672-411C-A61F-9CCA6BB14391}|FirstProgram.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC7D700-F672-411C-A61F-9CCA6BB14391}|FirstProgram.csproj|c:\\users\\windows\\desktop\\stuff\\coding\\csharp\\firstprogram\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC7D700-F672-411C-A61F-9CCA6BB14391}|FirstProgram.csproj|solutionrelative:car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Car.cs",
+              "RelativeDocumentMoniker": "Car.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Car.cs",
+              "RelativeToolTip": "Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T13:57:48.02Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAkwJgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAAK4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T13:55:37.503Z",
               "EditorCaption": ""
