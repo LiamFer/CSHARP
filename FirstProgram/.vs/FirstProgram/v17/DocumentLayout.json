@@ -30,8 +30,7 @@
               "RelativeToolTip": "Car.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T13:57:48.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T13:57:48.02Z"
             },
             {
               "$type": "Document",
@@ -39,9 +38,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAAK4AAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\Stuff\\Coding\\CSHARP\\FirstProgram\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAL0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T13:55:37.503Z",
               "EditorCaption": ""
